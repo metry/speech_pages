@@ -26,6 +26,7 @@ recognizer.onresult = function (event) {
 var result = event.results[event.resultIndex];
 if (result.isFinal) {
   console.log('Вы сказали: ' + result[0].transcript);
+  control(result[0].transcript);
 } else {
   console.log('Промежуточный результат: ', result[0].transcript);
 }
