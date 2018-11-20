@@ -45,9 +45,12 @@ function start () {
 
 $( document ).ready(function() {	
     $("#start").on( "click", function() {
-		start();
 		$('html, body').animate({
         scrollTop: $("#image").offset().top
 		}, 2000);
+	});
+
+	$("#microphone").on( "click", function() {
+		start();
 	});
 });
