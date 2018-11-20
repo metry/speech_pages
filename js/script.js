@@ -37,7 +37,11 @@ $( document ).ready(function() {
 	var utterance = new SpeechSynthesisUtterance('How about we say this now? This is quite a long sentence to say.');
 
 	function stop () {
-	synth.pause();
+		synth.pause();
+	}
+	
+	function start () {
+		recognizer.start();
 	}
 	
 	
@@ -45,6 +49,6 @@ $( document ).ready(function() {
 		$('html, body').animate({
         scrollTop: $("#image").offset().top
 		}, 2000);
-		recognizer.start();
+		start();
 	});
 });
