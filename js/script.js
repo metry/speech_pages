@@ -1,4 +1,5 @@
 function control(name) {
+	name = name.toLowerCase();
 	if (name == 'включить свет') {
 		$(".image3").hide();
 	}
