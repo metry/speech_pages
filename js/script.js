@@ -1,10 +1,10 @@
 function control(name) {
-	/*if (name == 'включить свет') {
-		
+	if (name == 'включить свет') {
+		$(".image3").hide();
 	}
 	if (name == 'выключить свет') {
-		
-	}*/
+		$(".image3").show();
+	}
 	if (name == 'открыть шторы') {
 		$(".image2").hide();
 	}
