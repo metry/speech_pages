@@ -73,6 +73,10 @@
 
 .overflow-hidden { overflow: hidden; }
 
+.image-container {
+	padding: 0;
+}
+
 .image-block {
 	width: 100%;
 }
