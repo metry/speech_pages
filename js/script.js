@@ -21,16 +21,16 @@ recognizer.interimResults = true;
 recognizer.lang = 'ru-Ru';
 // Используем колбек для обработки результатов
 recognizer.onresult = function (event) {
-	var result = document.getElementById("results");
+	var resultDiv = document.getElementById("results");
 	
 	var result = event.results[event.resultIndex];
 	if (result.isFinal) {
 	  console.log('Вы сказали: ' + result[0].transcript);
-	  result.innerHTML = result[0].transcript;
+	  resultDiv.innerHTML = result[0].transcript;
 	  control(result[0].transcript);
 	} else {
 	  console.log('Промежуточный результат: ', result[0].transcript);
-	  result.innerHTML = result[0].transcript + '...';
+	  resultDiv.innerHTML = result[0].transcript + '...';
 	}
 };
 
