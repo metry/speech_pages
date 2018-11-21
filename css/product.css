@@ -7,7 +7,7 @@
  */
 
 .site-header {
-  background-color: rgba(0, 0, 0, .85);
+  background-color: rgba(0, 0, 0, .8);
   -webkit-backdrop-filter: saturate(180%) blur(20px);
   backdrop-filter: saturate(180%) blur(20px);
 }
@@ -110,4 +110,17 @@
 }
 .microphone:hover {
 	color: #999;
+}
+
+.results {
+	text-align: center;
+	background-color: #F8F9FA;
+	font-size: 20px;
+	padding: 12px;
+	width: 40%;
+    border-radius: .3rem;
+	position: absolute;
+	bottom: 5%;
+	left: 5%;
+	z-index: 10;
 }
