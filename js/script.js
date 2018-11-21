@@ -34,6 +34,11 @@ recognizer.onresult = function (event) {
 	}
 };
 
+recognizer.onspeechend = function() {
+  var microphone = document.getElementById("microphone");
+  microphone.classList.remove("active");
+}
+
 function start () {
 	recognizer.start();
 }
@@ -48,5 +53,6 @@ $( document ).ready(function() {
 
 	$("#microphone").on( "click", function() {
 		start();
+		$(this).addClass("active");
 	});
 });

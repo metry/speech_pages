@@ -112,6 +112,10 @@
 	color: #999;
 }
 
+.microphone.active, .microphone.active:hover {
+	color: #0070c9;
+}
+
 .results {
 	text-align: center;
 	background-color: #F8F9FA;
